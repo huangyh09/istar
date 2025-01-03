@@ -107,6 +107,7 @@ def cluster(
     elif method == 'km':
         model = KMeans(
                 n_clusters=n_clusters,
+                algorithm='elkan',
                 random_state=0, verbose=0)
     elif method == 'gm':
         model = GaussianMixture(
